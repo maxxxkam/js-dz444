@@ -3,7 +3,7 @@ const ProductsData = [
     {
         img:'./img/img-card1.png',
         title: '3D Soft Curves',
-        user: '😀 Muslimov Mahkam',
+        user: '😀 Esther Howard',
         price: '0.85'
     },
 
