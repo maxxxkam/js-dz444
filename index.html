@@ -19,7 +19,7 @@
                 <a href="">Activity</a>
                 <a href="">Feed</a>
                 <a href="">Bids</a>
-                <svg class="svg__nav" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                <svg id="theme" class="svg__nav" width="80" height="80" viewBox="0 0 80 80" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1_36)">
                         <circle cx="40" cy="30" r="20" fill="white" />
@@ -44,7 +44,7 @@
                         </filter>
                     </defs>
                 </svg>
-                <button class="btn">Connect Wallet</button>
+                <button id="open-btn" class="btn">Connect Wallet</button>
 
             </div>
         </div>
@@ -128,11 +128,6 @@
         </div>
     </section>
 
-
-
-
-
-
     <footer>
         <div class="container">
            <div class="footer__block">
@@ -187,6 +182,22 @@
         </div>
     </footer>
 
+
+
+
+    <div class="modal">
+        <div class="modal__box">
+            <h4 class="close">X</h4>
+            <h2>Свяжитесь с нами</h2>
+            <p>если у вас есть вопросы ко мне</p>
+            <form id="telegramForm" action="">
+                <input id="name" placeholder="ваше имя" type="text">
+                <input id="phone" placeholder="ваш номер" type="text">
+                <button class="btn">отправить заявку</button>
+
+            </form>
+        </div>
+    </div>
 
     <script src="./script.js"></script>
 </body>
