@@ -116,6 +116,106 @@ const ProductsData2 = [
     },
 ]
 
+const ProductsData3 = [
+    {
+        first:'./img/futured-card-img1.png',
+        img:'img/futured-ava1.png',
+        name:'Tung Tran ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'3K Followers',
+        button:'',
+    },
+    {
+        first:'./img/futured-card-img2.png',
+        img:'img/futured-ava2.png',
+        name:'Wade Warren ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'34K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img3.png',
+        img:'img/futured-ava3.png',
+        name:'Arlene McCoy ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'52K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img4.png',
+        img:'img/futured-ava4.png',
+        name:'TDianne Russell ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'33541324K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img1.png',
+        img:'img/futured-ava5.png',
+        name:'Savannah Nguyen ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'69K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img2.png',
+        img:'img/futured-ava6.png',
+        name:'Jenny Wilson ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'2K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img3.png',
+        img:'img/futured-ava7.png',
+        name:'Brooklyn Simmons ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'2052K Followers',
+        button:'',
+    },
+
+    {
+        first:'./img/futured-card-img4.png',
+        img:'img/futured-ava8.png',
+        name:'Theresa Webb ☑️',
+        about:'Bad Artist, NFT Enthusiast, <br> Metaverse Innovator Supporting #bitcoin since <br>  2012.',
+        folowers:'123K Followers',
+        button:'',
+    },
+
+]
+
+
+const wrapper3 = document.querySelector('.futured__wrapper')
+const FuturedCards = ProductsData3.map(FuturedCard => {
+    return `
+         <div class="futured__card">
+                <img src=${FuturedCard.first} alt="">
+                <div class="card__wrap">
+                    <div class="futured__about">
+                        <img src=${FuturedCard.img} alt="" class="futured__ava">
+                        <div class="futured__texty">
+                            <b>${FuturedCard.name}</b>
+                        <p>${FuturedCard.about}</p>
+                        </div>
+                    </div>
+                    <div class="futured__btn">
+                        <p>${FuturedCard.folowers}</p>
+                        <button>Follow</button>
+                    </div>
+                </div>
+            </div>
+    `
+}).join('')
+wrapper3.innerHTML = FuturedCards
+
+
+
 
 const wrapper = document.querySelector('.live__wrapper1')
 const cards = ProductsData.map(card => {
